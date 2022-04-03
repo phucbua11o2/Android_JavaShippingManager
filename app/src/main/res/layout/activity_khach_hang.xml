@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CongTrinhActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtDSKH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Danh Sách Khách Hàng"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <ImageButton
+                    android:id="@+id/imgbtn_addkh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:backgroundTint="#FFFFFF"
+                    android:foregroundTint="#FFFFFF"
+                    android:src="@android:drawable/ic_input_add" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/listKH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtMaKH"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="10dp"
+                    android:text="Ma KH"
+                    android:textAlignment="textStart" />
+
+                <TextView
+                    android:id="@+id/txtTenKH"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="TenKH"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:padding="10dp"
+                    android:text="Email"
+                    android:textAlignment="textEnd" />
+                <TextView
+                    android:id="@+id/txtSdt"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:padding="10dp"
+                    android:text="SDT"
+                    android:textAlignment="textEnd" />
+                <TextView
+                    android:id="@+id/txtMaPVC"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:padding="10dp"
+                    android:text="MaPVC"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lvDSKH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
